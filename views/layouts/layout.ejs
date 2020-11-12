@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/main.css"></link>
-    <title>PumpWorx</title>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <link rel="stylesheet" href="/css/main.css"></link>
+    <title>AstroCam</title>
 </head>
 <body>
     <div class="container">
-        <div class="inner-container">
-            <%- body %> 
+        <div class="grid">
+            <header>
+                Header
+            </header>
+        
+            <aside class="sidebar-left">
+                Left Sidebar
+            </aside>
+        
+            <article>
+                <div class="display-cover">
+                    <video autoplay></video>
+                    <canvas class="d-none"></canvas>
+                
+                    <div class="video-options">
+                        <select name="" id="" class="custom-select">
+                            <option value="">Select camera</option>
+                        </select>
+                    </div>
+                
+                    <img class="screenshot-image d-none" alt="">
+                
+                    <div class="controls">
+                        <button class="btn btn-danger play" title="Play"><i data-feather="play-circle"></i></button>
+                        <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause"></i></button>
+                        <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image"></i></button>
+                    </div>
+                </div>
+                
+                <script src="/js/script.js"></script>
+            </article>
+        
+            <aside class="sidebar-right">
+                Right Sidebar
+            </aside>
+            
+            <footer>
+                Footer
+            </footer>
         </div>
     </div>
 </body>

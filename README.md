@@ -3,6 +3,7 @@
 ![Our Logo](public/assets/astrologo.jpg)
 
 My favorite search engine is [Ecosia](https://www.ecosia.org/?c=en)
+Reference 1: [DigitalOcean](https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-with-javascripts-getusermedia)
 
 ### Tasks
 
