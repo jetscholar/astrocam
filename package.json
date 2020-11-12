@@ -1,0 +1,31 @@
+{
+  "name": "astrocam",
+  "version": "1.0.0",
+  "description": "web app to server telescope cam images",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetscholar/astrocam.git"
+  },
+  "keywords": [
+    "astronomy"
+  ],
+  "author": "MJZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jetscholar/astrocam/issues"
+  },
+  "homepage": "https://github.com/jetscholar/astrocam#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
