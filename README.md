@@ -8,6 +8,8 @@ Reference 1: [DigitalOcean](https://www.digitalocean.com/community/tutorials/fro
 
 Reference 2: [Capturing and Saving User Audio or Video with JavaScript](https://www.youtube.com/watch?v=K6L38xk2rkk)
 
+Reference 3: [Get You Some Media With getUserMedia()](https://medium.com/@matt.mcalister93/get-you-some-media-with-getusermedia-726cde161cd7)
+
 ### Tasks
 
 - [x] - Setup web page

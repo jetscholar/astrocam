@@ -31,11 +31,17 @@
     padding: 1em 0;
     }
 
-    header,
+    header {
+        background-image: url('../assets/stars.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 50px;
+    }
+
     aside,
     article,
     footer {
-    background: #eaeaea;
+    background: #d0cedf;
     display: flex;
     align-items: center;
     justify-content: center;
