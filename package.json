@@ -1,7 +1,7 @@
 {
   "name": "astrocam",
-  "version": "1.0.0",
-  "description": "web app to server telescope cam images",
+  "version": "0.1.0",
+  "description": "web app to serve telescope cam images",
   "main": "server.js",
   "scripts": {
     "devStart": "nodemon server.js",
