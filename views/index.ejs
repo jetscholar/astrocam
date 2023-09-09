@@ -1,0 +1,12 @@
+    <img id="stream" src="" alt="ESP32-CAM Stream">
+    <script>
+        const streamImage = document.getElementById('stream');
+        // const socket = new WebSocket('ws://192.168.1.131:your_websocket_port');
+        const socket = new WebSocket('ws://your_server_ip:your_websocket_port');
+
+        socket.onmessage = (event) => {
+            const blob = new Blob([event.data], { type: 'image/jpeg' });
+            const imageUrl = URL.createObjectURL(blob);
+            streamImage.src = imageUrl;
+        };
+    </script>

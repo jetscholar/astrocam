@@ -1,31 +1,28 @@
-import express from "express"
-// to deal with __dirname
-import path from 'path'
-import { fileURLToPath } from 'url'
-
-import ejs from "ejs"
-import expressLayouts from "express-ejs-layouts"
+if (process.env.NODE_ENV !== 'production') {
+    const dotenv = require('dotenv')
+    dotenv.config()
+}
 
 const port = 6942
+const express = require('express')
+const expressLayouts = require('express-ejs-layouts')
 
 const app = express()
 
-import { router } from './routes/index.js'
-
+// Set and Use things
 app.set('view engine', 'ejs')
-
-//we need to change up how __dirname is used for ES6 purposes
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-//now please load my static html and css files for my express app, from my /dist directory
-app.use(express.static(path.join(__dirname ,'dist')));
-//** app.set('views', __dirname + '/views') **
-
 app.set('layout', 'layouts/layout')
+app.set('views', __dirname + '/views')
 app.use(expressLayouts)
 app.use(express.static('public'))
+app.use(express.json({ limit: '1mb' }))
 
-app.use('/', router)
+// Routes
+const indexRouter = require('./routes/index')
 
+app.use('/', indexRouter)
+
+// Start the server
 app.listen(process.env.PORT || port, () => {
     console.log('Web App ready at http://localhost:' + port)
 })
