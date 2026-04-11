@@ -1,147 +1,34 @@
-.grid {
-    display: grid;
-    grid-template-columns: 150px auto 150px;
-    grid-gap: 1em;
-}
-
-header,
-footer {
-    grid-column: 1 / 4;
-}
-
-@media (min-width: 300px) and (max-width: 400px) {
-    .controls {
-        flex-direction: column;
-    }
-
-    .controls button {
-        margin: 5px 0 !important;
-    }
-}
-
-/* @media all and (max-width: 700px) {
-    aside,
-    article {
-        grid-column: 1 / 4;
-    }
-    } */
-
-/* Demo Specific Styles */
 body {
-    margin: 0 auto;
-    font-family: 'Rubik', sans-serif;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #0f172a;
+	color: #e5e7eb;
 }
 
 header {
-    display: flex;
-    background-color: #2B303A;
-    height: 50px;
-    color: white;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	padding: 16px 24px;
+	background: #111827;
+	border-bottom: 1px solid #1f2937;
 }
 
-aside,
-article,
-footer {
-    background: #d0cedf;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
+	padding: 24px;
 }
 
-article {
-    height: 80%;
+section {
+	margin-bottom: 24px;
+	padding: 16px;
+	background: #111827;
+	border: 1px solid #1f2937;
+	border-radius: 8px;
 }
 
-.screenshot-image {
-    width: 150px;
-    height: 90px;
-    border-radius: 4px;
-    border: 2px solid whitesmoke;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    background: white;
+ul {
+	padding-left: 20px;
 }
 
-.display-cover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: 5% auto;
-    position: relative;
-}
-
-video {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.video-options {
-    position: absolute;
-    left: 20px;
-    top: 30px;
-}
-
-.controls {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.controls>button {
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    border-radius: 100%;
-    margin: 0;
-    margin-top: 6px;
-    background: transparent;
-}
-
-.controls>button:hover svg {
-    color: white !important;
-}
-
-.controls>button>svg {
-    height: 20px;
-    width: 18px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.controls button:nth-child(1) {
-    border: 2px solid #D2002E;
-}
-
-.controls button:nth-child(1) svg {
-    color: #D2002E;
-}
-
-.controls button:nth-child(2) {
-    border: 2px solid #008496;
-}
-
-.controls button:nth-child(2) svg {
-    color: #008496;
-}
-
-.controls button:nth-child(3) {
-    border: 2px solid #00B541;
-}
-
-.controls button:nth-child(3) svg {
-    color: #00B541;
-}
-
-.controls>button:hover svg {
-    color: white;
+li {
+	margin-bottom: 14px;
+	line-height: 1.5;
 }

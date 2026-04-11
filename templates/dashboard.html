@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+	<h2>AstroCam Dashboard</h2>
+	<p>Phase 1 backend scaffold is running.</p>
+</section>
+
+<section>
+	<h3>Recent Captures</h3>
+
+	{% if recent_captures %}
+		<ul>
+			{% for capture in recent_captures %}
+				<li>
+					<strong>{{ capture.filename }}</strong><br>
+					Time: {{ capture.captured_at }}<br>
+					Notes: {{ capture.notes or "None" }}<br>
+					Path: {{ capture.filepath }}
+				</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No captures yet.</p>
+	{% endif %}
+</section>
+{% endblock %}
